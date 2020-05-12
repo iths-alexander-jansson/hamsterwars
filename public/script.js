@@ -1,3 +1,5 @@
+//detta bör not inte ligga i public
+
 var firebaseConfig = {
     apiKey: "AIzaSyBDWDKldvA3Dw70OWRyWX00ntLeCNS0N2g",
     authDomain: "hamsterwars-iths-alex.firebaseapp.com",
@@ -11,4 +13,6 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-const db = firebase.firestore();
+console.log(firebase)
+
+const db = firebase.firestore(); 

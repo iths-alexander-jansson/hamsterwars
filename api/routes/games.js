@@ -1,6 +1,7 @@
 const { Router } = require('express');
-const { auth, db } = require('./../firebase');
-
 const router = new Router();
+const { db } = require('../firebase');
+
+
 
 module.exports = router;

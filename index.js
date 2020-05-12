@@ -1,18 +1,23 @@
 const express = require('express');
-
 const app = express();
 
-app.use(express.static('public'))
+app.use(express.json());
+app.use(express.static('public'));
 
-// // alla post.body > json
-// app.use(express.json());
+// const auth = require('./api/auth');
+// app.use(auth);
 
+// const assetsRoute = require('./api/routes/assets');
+const hamstersRoute = require('./api/routes/hamsters');
+const chartsRoute = require('./api/routes/charts');
+const gamesRoute = require('./api/routes/games');
+const statsRoute = require('./api/routes/stats');
 
-// const hamstersRoute = require('./routes/hamsters');
-// app.use('/hamsters', hamstersRoute);
-
-// const gamesRoute = require('./routes/todogames');
-// app.use('/games', gamesRoute);
+// app.use('/assets', assetsRoute);
+app.use('/hamsters', hamstersRoute);
+app.use('/charts', chartsRoute);
+app.use('/games', gamesRoute);
+app.use('/stats', statsRoute);
 
 
 app.listen(4000, () => {
