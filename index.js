@@ -7,13 +7,14 @@ app.use(express.static('public'))
 // // alla post.body > json
 // app.use(express.json());
 
-// const usersRoute = require('./routes/users');
-// app.use('/users', usersRoute);
 
-// const listsRoute = require('./routes/todoLists');
-// app.use('/lists', listsRoute);
+// const hamstersRoute = require('./routes/hamsters');
+// app.use('/hamsters', hamstersRoute);
+
+// const gamesRoute = require('./routes/todogames');
+// app.use('/games', gamesRoute);
 
 
 app.listen(4000, () => {
-    console.log('Server is up & runnin on port 4000!');
+    console.log('Server is up & runnin on port 4k!');
 })
