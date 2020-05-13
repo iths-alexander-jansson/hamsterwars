@@ -4,6 +4,7 @@ const { bucket } = require('../firebase');
 const router = new Router();
 
 //Fixa fram bild från cloud, funkar äntligen :)
+// /assets/	GET	Servar bilderna via host i Firebase/storage
 router.get('/:filename', async (req, res) => {
     try {
         const imgObj = await bucket.file(`hamsters/${req.params.filename}`).download();
@@ -13,5 +14,6 @@ router.get('/:filename', async (req, res) => {
         res.status(500).send(err);
     }
 });
+
 
 module.exports = router;

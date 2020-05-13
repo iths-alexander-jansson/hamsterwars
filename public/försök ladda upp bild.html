@@ -1,0 +1,95 @@
+<!-- 
+Satt och trickade för att försöka få till filuppladdning.
+Men lykcades inte, ger det ett nytt försök senare
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hamsterwars</title>
+</head>
+
+<body>
+    <!-- <style media="screen">
+        body {
+            display: flex;
+            min-height: 100vh;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        #uploader {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 50%;
+            margin-bottom: 10px;
+        }
+    </style> -->
+    <!-- <progress value="0" max="100" id="uploader">0%</progress>
+    <input type="file" value="upload" id="fileButton" /> -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+
+    <!-- <script src="./script.js"></script> -->
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBDWDKldvA3Dw70OWRyWX00ntLeCNS0N2g",
+            authDomain: "hamsterwars-iths-alex.firebaseapp.com",
+            databaseURL: "https://hamsterwars-iths-alex.firebaseio.com",
+            projectId: "hamsterwars-iths-alex",
+            storageBucket: "hamsterwars-iths-alex.appspot.com",
+            messagingSenderId: "652608832083",
+            appId: "1:652608832083:web:25189f74be6e3215f53ca6"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        // var uploader = document.getElementById('uploader');
+        // var fileButton = document.getElementById('fileButton');
+
+        // fileButton.addEventListener('change', function (e) {
+
+        //     var file = e.target.files[0];
+        //     var storageRef = firebase.storage().ref('awe_some/' + file.name);
+
+        //     var task = storageRef.put(file);
+
+        //     task.on('state_changed',
+
+        //         function progress(snapshot) {
+        //             var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+        //             uploader.value = percentage;
+
+        //         },
+
+        //         function error(err) {
+
+        //         },
+
+        //         function complete() {
+
+        //         }
+
+        //     );
+        // });
+
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+
+
+
+
+</body>
+
+</html>

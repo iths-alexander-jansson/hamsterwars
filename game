@@ -1,0 +1,46 @@
+{
+    id: Number,
+    timeStamp: Date,
+    contestants: [
+        { {
+  "age": 5,
+  "defeats": 1,
+  "name": "Lelaah",
+  "favFood": "sallad",
+  "games": 12,
+  "wins": 11,
+  "imgName": "hamster-10.jpg",
+  "id": 10,
+  "loves": "Running that wheeeeeeeeeeeeeeeel!"
+} },
+        { {
+  "wins": 10,
+  "imgName": "hamster-1.jpg",
+  "id": 1,
+  "loves": "Running that wheeeeeeeeeeeeeeeel!",
+  "age": 1,
+  "defeats": 3,
+  "name": "Sixten",
+  "favFood": "ostbollar",
+  "games": 13
+} }
+    ],
+    winner: { {
+  "wins": 10,
+  "imgName": "hamster-1.jpg",
+  "id": 1,
+  "loves": "Running that wheeeeeeeeeeeeeeeel!",
+  "age": 1,
+  "defeats": 3,
+  "name": "Sixten",
+  "favFood": "ostbollar",
+  "games": 13
+} }
+}
+
+{
+	"wins" : 0,
+	"defeats" : 1,
+	"games" : 1
+	
+}

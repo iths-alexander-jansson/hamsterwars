@@ -42,8 +42,13 @@ router.get('/:id', async (req, res) => {
         res.status(500).send(err);
     }
 });
+//Alla ovan Funkar!
+
+// /hamsters/:id/result	PUT	Updaterar ett hamsterobject egenskaper: wins, defeats och +1 på games.
+// http://localhost:4000/hamsters/10/results
+
+// På G, ligger i separat doc, lite strul
 
 module.exports = router;
 
 
-//Funkar!

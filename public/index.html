@@ -8,16 +8,37 @@
     <title>Hamsterwars</title>
 </head>
 
+<style media="screen">
+    body {
+        display: flex;
+        min-height: 100vh;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #uploader {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 50%;
+        margin-bottom: 10px;
+    }
+</style>
+<h1>WAR</h1>
+<progress value="0" max="100" id="uploader">0%</progress>
+<input type="file" value="upload" id="fileButton" />
+<p>OBS, funkar ej :(</p>
+
 <body>
 
-    <p>kanpp för upload osv?</p>
-    https://firebase.google.com/docs/storage/web/start
 
-    <!-- dessa ska bort?! -->
-    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="./script.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
-    <script src="js/script.js"></script>
 </body>
 
 </html>
