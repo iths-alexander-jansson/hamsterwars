@@ -1,4 +1,4 @@
-//detta bör not inte ligga i public
+//detta bör not inte ligga i public, eller kanske är ok?
 
 var firebaseConfig = {
     apiKey: "AIzaSyBDWDKldvA3Dw70OWRyWX00ntLeCNS0N2g",
@@ -12,7 +12,5 @@ var firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-
-console.log(firebase)
 
 const db = firebase.firestore(); 

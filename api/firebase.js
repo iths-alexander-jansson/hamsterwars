@@ -1,5 +1,5 @@
 const admin = require("firebase-admin");
-const serviceAccount = require("/Users/alexanderjansson/GitHub/hamsterwars/serviceAccount.json");
+const serviceAccount = require("../serviceAccount.json");
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
@@ -8,10 +8,9 @@ admin.initializeApp({
 });
 
 
-const auth = admin.auth();
 const db = admin.firestore();
 const bucket = admin.storage().bucket();
 
 
-module.exports = { auth, db, bucket }
+module.exports = { db, bucket }
 
