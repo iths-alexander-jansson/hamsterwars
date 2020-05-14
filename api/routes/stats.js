@@ -14,9 +14,11 @@ router.get('/total', async (req, res) => {
     }
 });
 
-//Funkar
+
+
+module.exports = router;
+
+// Funkar!
 // //{
 //     "There has been this many games": 5
 // }
-
-module.exports = router;

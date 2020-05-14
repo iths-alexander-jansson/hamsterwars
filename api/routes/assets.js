@@ -3,8 +3,11 @@ const { bucket } = require('../firebase');
 
 const router = new Router();
 
-//Fixa fram bild från cloud, funkar äntligen :)
+// Fixa fram bild från cloud, funkar äntligen :)
+// Har därmed tagit bort bild mappen
 // /assets/	GET	Servar bilderna via host i Firebase/storage
+// http://localhost:4000/assets/hamster-6.jpg
+
 router.get('/:filename', async (req, res) => {
     try {
         const imgObj = await bucket.file(`hamsters/${req.params.filename}`).download();
@@ -17,3 +20,5 @@ router.get('/:filename', async (req, res) => {
 
 
 module.exports = router;
+
+// Funkar!

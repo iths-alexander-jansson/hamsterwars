@@ -2,3 +2,4 @@ node_modules/
 serviceAccount.json
 .DS_Storenode_modules/
 .DS_Store
+.env

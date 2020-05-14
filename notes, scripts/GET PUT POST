@@ -1,4 +1,4 @@
-GETs
+// cmd c / cmd v > Insomnia
 
 http://localhost:4000/assets/hamster-1.jpg
 OK
@@ -18,10 +18,14 @@ OK
 http://localhost:4000/charts/bottom
 OK
 
-Kvar:
-
+http://localhost:4000/hamsters/10/result
 /hamsters/:id/result (PUT)
+OK
 
+http://localhost:4000/games
 /games (POST & GET)
+OK
 
+http://localhost:4000/stats/total
 /stats/total (GET)
+OK

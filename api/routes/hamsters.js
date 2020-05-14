@@ -45,10 +45,34 @@ router.get('/:id', async (req, res) => {
 //Alla ovan Funkar!
 
 // /hamsters/:id/result	PUT	Updaterar ett hamsterobject egenskaper: wins, defeats och +1 på games.
-// http://localhost:4000/hamsters/10/results
+// http://localhost:4000/hamsters/10/result
 
-// På G, ligger i separat doc, lite strul
+// update hamster's wins && defeats by id
+router.put('/:id/result', async (req, res) => {
+    try {
+        const snapshot = await db.collection('hamsters').doc(req.params.id).get();
+        const hamster = snapshot.data();
+
+        if (req.body.wins === 1 && req.body.defeats === 0) {
+            hamster.wins++;
+            hamster.games++;
+        } else if (req.body.wins === 0 && req.body.defeats === 1) {
+            hamster.defeats++;
+            hamster.games++;
+        } else {
+            throw 'Something went wrong, did you atatch game stats?';
+        }
+
+        db.collection('hamsters').doc(req.params.id).set(hamster)
+            .then(res.send({ msg: `The hamster with id: ${req.params.id} was updated` }))
+            .catch(err => { throw err });
+
+    } catch (err) {
+        res.status(500).send(err);
+    }
+});
+
 
 module.exports = router;
 
-
+// Funkar!

@@ -1,3 +1,5 @@
+// La lite grejer här för att kunna copy/paste
+
 {
     id: Number,
     timeStamp: Date,
@@ -41,6 +43,13 @@
 {
 	"wins" : 0,
 	"defeats" : 1,
+	"games" : 1
+	
+}
+
+{
+	"wins" : 1,
+	"defeats" : 0,
 	"games" : 1
 	
 }

@@ -2,7 +2,7 @@ const { Router } = require('express');
 const { db } = require('../firebase');
 const router = new Router();
 
-// Manipulierade datan (defeats, wins) själv i Firestore för att se att de funka.
+// Manipulierade datan (defeats, wins) själv i Firestore för att se att de funka, innan games va igång
 
 // /charts/top	GET	Returnerar en array med top 5 mest vinnande hamsterobject.
 // http://localhost:4000/charts/top
